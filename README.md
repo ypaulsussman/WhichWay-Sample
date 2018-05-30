@@ -7,7 +7,7 @@ While WhichWay's development was put on indefinite hiatus with the discontinuati
 For my duties on the front-end team, I... 
 * built various components (_e.g._ `Hex.js` _and_ `SkillProfilerPage.js`); 
 * styled them in SCSS (_e.g._ `Hex.scss` _and_ `SkillProfilerPage.scss`); 
-* connected several of them to the app's Redux store (_e.g._`SkillProfilerReducer.js` _and_ `SkillProfilerAction.js`_, not present_);
+* connected several of them to the app's Redux store (_e.g._`SkillProfilerAction.js`_, not present, _and_ `SkillProfilerReducer.js`);
 * enabled asynchronous behavior via the redux-saga middleware (_e.g._`SkillProfilerApi.js`); and
 * hit 95+% test coverage (_measured via Istanbul_) via Jest and Enzyme (_e.g._`SkillProfilerPage.test.js`).
 
