@@ -9,6 +9,6 @@ For my duties on the front-end team, I...
 * styled them in SCSS (_e.g._ `Hex.scss` _and_ `SkillProfilerPage.scss`); 
 * connected several of them to the app's Redux store (_e.g._`SkillProfilerReducer.js` _and_ `SkillProfilerAction.js`_, not present_);
 * enabled asynchronous behavior via the redux-saga middleware (_e.g._`SkillProfilerApi.js`); and
-* hit 95+% test coverage (measured via Istanbul) via Jest and Enzyme (_e.g._`SkillProfilerPage.test.js`).
+* hit 95+% test coverage (_measured via Istanbul_) via Jest and Enzyme (_e.g._`SkillProfilerPage.test.js`).
 
 These files combined with several dozen other components to form the working WhichWay MVP. You can view a walkthrough screencast of the complete app's functionality [in this video.](https://www.dropbox.com/s/3iyambkt3tbt42r/WhichWay_Walkthrough.mp4?dl=0)
