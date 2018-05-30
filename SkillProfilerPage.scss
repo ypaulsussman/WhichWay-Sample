@@ -1,0 +1,25 @@
+// Proprietary material of ECMC Group.  Used with permission.  No further use authorized.
+
+@import '../../css/core.scss';
+
+.skill-profiler-page{
+  @include standard-footer();
+
+  .instructions-offset-skill{
+    padding-top: $header-height + 30px;
+  }
+
+  .hex-container{
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 2%;
+    padding-top: calc(16px + 4.26vw);    
+    padding-bottom: $footer-height + 30px;    
+  }
+
+  .legend-wrapper{
+    background-color: white;
+    height: 74px;
+  }
+}

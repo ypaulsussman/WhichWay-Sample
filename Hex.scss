@@ -1,0 +1,170 @@
+// Proprietary material of ECMC Group.  Used with permission.  No further use authorized.
+
+@import '../../css/theme/whichway.scss';
+
+@mixin max-width($width) {
+    @media screen and (max-width: $width) {
+        @content;
+    }
+}
+
+@mixin hex-triangles-on-click ($color){
+    background: $color;
+    box-shadow: 0px 1px $color, 0px -1px $color; 
+    &:before {
+        border-bottom-color: $color;
+    }
+    &:after {
+        border-top-color: $color;
+    }
+}
+
+.hex {
+    margin: 5vw 1vw;
+    width: 30vw;
+    height: 17.28vw;
+    position: relative;
+    box-sizing: border-box;
+    flex-basis: 25%;
+    &:before, &:after {
+        content:"";
+        border-left: 15vw solid transparent; 
+        border-right: 15vw solid transparent;
+        position: absolute;
+    }
+    &:before {
+        top: -8.52vw; 
+        border-bottom: 8.64vw solid $color--whichway-background;
+    }
+    &:after {
+        bottom: -8.52vw;
+        border-top: 8.64vw solid $color--whichway-background;
+    }
+    &.inactive{
+        background: $color--whichway-background;
+    }
+    &.active{
+        @include hex-triangles-on-click ($color--white)
+    }
+    &.inner {
+        margin: 0vw;
+        background-color:$color--white;
+        -webkit-transform: scale(.95, .95);
+        -moz-transform: scale(.95, .95);
+        transform: scale(.95, .95);
+        z-index:1;
+        box-sizing: border-box;
+        flex: 1;
+        &:before {
+            border-bottom: 8.52vw solid $color--white;
+        }
+        &:after {
+            border-top: 8.52vw solid $color--white;
+        }
+        &.active_0 {
+            background-color: $color--whichway-2;
+            @include hex-triangles-on-click ($color--whichway-2)
+        }
+        &.active_1 {
+            background-color: $color--whichway-3;
+            @include hex-triangles-on-click ($color--whichway-3)
+        }
+        &.active_2 {
+            background-color: $color--whichway-5;
+            @include hex-triangles-on-click ($color--whichway-5)
+        }
+
+    }
+}
+
+.hex-text {
+    z-index: 2;
+    position: absolute;
+    top: 30%;
+    transform: translate(0%, -50%);
+    text-align: center;
+    font-size: 3.25vw;
+    width: 80%;
+    padding-left: 2.75vw;
+    color: $color--whichway-inactive;
+    &.active_0, &.active_1{
+        color: $color--whichway-5;
+    }
+    &.active_2{
+        color: $color--white;
+    }
+}
+
+//////////// MEDIA QUERIES ////////////
+
+@media (min-width: 640px) {
+    .hex-container >:nth-child(4) {
+        flex-basis: 25%;
+        margin-left: 17.4%
+    }
+    .hex-container >:nth-child(5n+4) {
+        flex-basis: 25%;
+        margin-left: 17.4%
+    }
+    .hex-container >:nth-child(5n+5) {
+        margin-right: 16%
+    }
+}
+
+@media (max-width:640px) {
+    .hex-container{
+        margin-left: 1%;
+        padding-top: calc(12px + 6.42vw);
+    }
+ 
+    .hex-container >:nth-child(3n+3) {
+        flex-basis: 25%;
+        margin-left: 26.5%;
+        margin-right: 25%
+    }
+
+    .hex {
+        margin: 8vw 2vw;
+        width: 44.88vw; 
+        height: 25.92vw;
+        &:before, &:after {
+            border-left: 22.5vw solid transparent; 
+            border-right: 22.5vw solid transparent; 
+        }
+        &:before {
+            top: -12.84vw;
+            border-bottom: 12.96vw solid $color--whichway-background;
+        }
+        &:after {
+            bottom: -12.84vw;
+            border-top: 12.96vw solid $color--whichway-background;
+        }
+        &.active{
+            @include hex-triangles-on-click ($color--white)
+        }
+        &.inner{
+            &:before {
+                border-bottom: 12.96vw solid $color--white;
+            }
+            &:after {
+                border-top: 12.96vw solid $color--white;
+            }            
+
+            &.active_0 {
+                @include hex-triangles-on-click ($color--whichway-2);
+            }            
+            &.active_1 {
+                @include hex-triangles-on-click ($color--whichway-3);
+            }
+            &.active_2 {
+                @include hex-triangles-on-click ($color--whichway-5);
+            }
+        }
+    }
+
+    .hex-text {
+        font-size: 5vw;
+        padding-left: 4.5vw;
+    }    
+}
+
