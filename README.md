@@ -2,7 +2,9 @@
 
 This repo contains samples of my contributions to WhichWay, a mobile-first, decoupled React and Ruby on Rails application aiming to provide intuitive career guidance to potential postsecondary students. (_For more information on the process and strategy underlying this app, please see_ [the lead designer's product overview.](http://www.t-winters.com/#/whichway-mvp/))
 
-While WhichWay's development was put on indefinite hiatus with the discontinuation of ECMC's Innovation Lab, [ECMC Group](https://www.ecmc.org/about-us/index.html) has (*very*) generously allowed several of the team to publicly display some samples of their work from the project. A personal thanks to that institution: this was wholly unexpected, and very much appreciated.
+While WhichWay's development was put on indefinite hiatus with the discontinuation of ECMC's Innovation Lab, [ECMC Group](https://www.ecmc.org/about-us/index.html) has (*very*) generously allowed several of the team to publicly display some samples of their work from the project. 
+
+A personal thanks to that institution: this was not required on their part, and very much appreciated on mine.
 
 For my duties on the front-end team, I... 
 * built various components (_e.g._ `Hex.js` _and_ `SkillProfilerPage.js`); 

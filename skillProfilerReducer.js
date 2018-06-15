@@ -1,4 +1,5 @@
-// Proprietary material of ECMC Group.  Used with permission.  No further use authorized.
+// This code is the property of ECMC Group and is provided with permission as a work sample. 
+// No further use or dissemination is authorized without express written permission of ECMC Group.
 
 import dotProp from 'dot-prop-immutable';
 
