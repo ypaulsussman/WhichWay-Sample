@@ -13,4 +13,4 @@ For my duties on the front-end team, I...
 * enabled asynchronous behavior via the redux-saga middleware (_e.g._`SkillProfilerApi.js`); and
 * hit 95+% test coverage (_measured via Istanbul_) via Jest and Enzyme (_e.g._`SkillProfilerPage.test.js`).
 
-These files combined with several dozen other components to form the working WhichWay MVP. You can view a walkthrough screencast of the complete app's functionality [in this video.](https://www.dropbox.com/s/3iyambkt3tbt42r/WhichWay_Walkthrough.mp4?dl=0)
+These files combined with several dozen other components to form the working WhichWay MVP. You can view a walkthrough screencast of the complete app's functionality [in this video.](https://drive.google.com/file/d/1KWrsXunE_wxf9GYoVTPBUuJzblxCDXMd/view)
